@@ -4,7 +4,7 @@
 Node.js web client that excercises the AliCLoud MNS functionality
 
 
-## AWS Credentials
+## Credentials
 Copy the configuration details and add your Alicloud creds.
 
 ** please take care and don't commit your creds back to git **
