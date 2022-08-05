@@ -1,0 +1,52 @@
+<!-- 8. Create Topic -->
+<div id="8" class="menu-div" style="display:none">
+    <form method="POST" action="/topic" >
+        <span>Create MNS Topic</span><hr><br>
+        <label>Topic Name:</label>
+        <input placeholder ="MNS Topic Name" id ="mnstopic" type="text" name="mnstopic" value="<%= ui.def_topicname %>" required><br><br>
+        <input type="submit" value="Create Topic"><br><br>
+        <label>Response:</label>
+        <textarea name="response" id ="response" readonly><%= ui.data[8] %></textarea>
+    </form>
+</div>
+
+
+<!--  Send Queue -->
+<div id="9" class="menu-div" style="display:none">
+    <form method="POST" action="/topic/message" >
+        <span>Send Message to Topic</span><br><hr><br>
+        <label>MNS Topic Name:</label>
+        <input placeholder ="MNS Topic Name" id ="mnstopic" type="text" name ="mnstopic" value="<%= ui.def_mnstopic %>" required ><br><br>
+        <label>Message:</label>
+        <input placeholder="Mesage" id ="topicmessage" type="text" name ="topicmessage" required >
+        <br><br><input type="submit" value="Send message to topic"><br><br>
+        <label>Response:</label>
+        <textarea name="response" id ="response" readonly><%= ui.data[9] %></textarea>
+    </form>
+</div>
+
+<!-- 9. List Topics -->
+<div id="10" class="menu-div" style="display:none">
+    <form method="GET" action="/topic" >
+        <span>List SNS Topics</span><br><hr><br>
+        <br><input type="submit" value="List Topics"><br><br>
+        <label>Response:</label>
+        <textarea name="response" id ="response" readonly><%= ui.data[10] %></textarea>
+    </form>
+</div>
+
+
+<!-- 11. Get Topic Attributes -->
+<div id="11" class="menu-div" style="display:none">
+    <form method="GET" action="/topic/attributes" >
+        <span>Get Topic Attributes</span><br><hr><br>
+        <label>MNS Topic Name:</label>
+        <input placeholder="MNS Topic Name" id ="mnstopic" type="text" name ="mnstopic" value="<%= ui.def_topicname %>"  required >
+        <br><br><input type="submit" value="Attributes"><br><br>
+        <label>Response:</label>
+        <textarea name="response" id ="response" readonly><%= ui.data[11] %></textarea>
+    </form>
+</div>
+
+
+

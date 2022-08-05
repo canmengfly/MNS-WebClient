@@ -1,0 +1,31 @@
+{
+  "name": "alicloud-MNS-client",
+  "version": "1.0.0",
+  "description": "Ali MNS client",
+  "main": "app.js",
+  "dependencies": {
+    "mns": "file:mns-nodejs-sdk",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canmeng/mnsclient"
+  },
+  "keywords": [
+    "MNS",
+    "nodejs"
+  ],
+  "author": "TaborChen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canmeng/mnsclient/issues"
+  },
+  "homepage": "https://github.com/canmeng/mnsclient#readme"
+}
